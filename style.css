@@ -1,0 +1,539 @@
+:root {
+    --fancy: "Moo Lah Lah", serif;
+    --main-font: "Lexend Exa", sans-serif;
+    --xl: 1980px;
+    --lg: 1280px;
+    --md: 960px;
+    --tc: color 0.3s;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 18px
+}
+
+header .menu {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+}
+
+header .menu .logo h2 {
+    width: 200px;
+}
+
+header .menu .logo span {
+    background-color: rgb(85, 129, 216);
+    border-radius: 50%;
+    padding: 20px;
+    color: white;
+}
+
+header div nav ul{
+    display: flex;
+    gap: 25px;
+}
+
+header div nav ul li{
+    display: inline;
+}
+
+header .menu nav ul li:not(:first-child) a {
+    color: gray;
+    transition: var(--tc);
+}
+
+header .menu nav ul li a:hover {
+    color: black;
+}
+
+header .menu nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main .virtual-health {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+
+main .virtual-health .virtual-health-box {
+    max-width: var(--lg);
+    text-align: left;
+    width: 475px;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+main .virtual-health .virtual-health-box p {
+    font-size: 18px;
+    opacity: 50%;
+}
+
+main .virtual-health .virtual-health-box h1 {
+    font-size: 36px;
+}
+
+main .virtual-health .virtual-health-box button {
+    background-color: rgb(87, 119, 222);
+    font-size: 20px;
+    color: white;
+    border-radius: 40px;
+    width: 200px;
+    height: 60px;
+    border: none;
+}
+
+main .services-items {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+main .services-items .services_box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+}
+
+main .services_box .services_desc {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+main .services_box .services_desc h2 {
+    text-align: center;
+    width: 150px;
+    font-size: 28px;
+}
+
+main .services_box .services_desc p {
+    display: flex;
+    text-align: center;
+    width: 55%;
+    font-size: 18px;
+    opacity: 50%;
+}
+
+main .services_box .services {
+    display: flex;
+    width: 67%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+main .services_box .services div {
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: left;
+    width: 340px;
+    height: 300px;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 20px;
+    border-radius: 20px;
+    box-shadow: 12px 12px 12px rgb(0, 0, 0, 0.1),
+    -10px -10px 10px white;
+}
+
+main .services_box .services div:hover {
+    cursor: pointer;
+}
+
+main .services_box .services div h3 {
+    font-size: 26px;
+}
+
+main .services_box .services div p {
+    font-size: 18px;
+    opacity: 50%;
+    width: 285px;
+    line-height: 25px;
+}
+
+main .services-items .services_box button {
+    background-color: white;
+    width: 12%;
+    border: 1px solid rgb(87, 119, 222);
+    color: rgb(87, 119, 222);
+    border-radius: 30px;
+    height: 50px;
+}
+
+main .services-items .services_box button:hover {
+    background-color: rgb(87, 119, 222);
+    color: white;
+    cursor: pointer;
+}
+
+main .leading_health {
+    width: 100%; 
+}
+
+main .leading_health .leading_health_box {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10%;
+    flex-wrap: wrap;
+}
+
+main .leading_health .leading_healtxbox {
+    flex-direction: column;
+    display: flex;
+    width: 30%;
+    gap: 40px;
+    line-height: 1.4;
+}
+
+main .leading_health .leading_healtxbox h2 {
+    width: 300px;
+}
+
+main .leading_health .leading_healtxbox p {
+    width: 300px;
+    opacity: 50%;
+}
+
+main .leading_health .leading_healtxbox button {
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
+    border: 1px solid rgb(87, 119, 222);
+    color: rgb(87, 119, 222);
+    background-color: white;
+}
+
+main .leading_health .leading_healtxbox button:hover {
+    background-color: rgb(87, 119, 222);
+    color: white;
+    cursor: pointer;
+}
+
+main .app {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main .app .app_main_box {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    line-height: 1.4;
+    flex-wrap: wrap;
+}
+
+main .app .app_main_box .app_left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+main .app .app_main_box .app_left h2 {
+    width: 200px;
+}
+
+
+main .app .app_main_box .app_left p {
+    width: 400px;
+    font-size: 18px;
+    opacity: 50%;
+}
+
+main .app .app_main_box .app_left button {
+    width: 50%;
+    height: 50px;
+    border-radius: 40px;
+    border: 1px solid rgb(87, 119, 222);
+    color: rgb(87, 119, 222);
+    background-color: white;
+    word-spacing: 5px;
+}
+
+main .app .app_main_box .app_left button:hover {
+    background-color: rgb(87, 119, 222);
+    color: white;
+    cursor: pointer;
+}
+
+main .comments {
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+    color: white;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+main .comments .comments_box {
+    border-radius: 20px;
+    background: linear-gradient(to top, rgb(87, 119, 222), rgb(124, 124, 255));
+    width: 1500px;
+    height: 550px;
+    display: flex;
+    gap: 90px;
+    flex-direction: column;
+}
+
+main .comments .comments_box h2 {
+    font-size: 40px;
+    margin-top: 80px;
+}
+
+main .comments .comments_box .commentator {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 1.4;
+    text-align: left;
+    font-size: 18px;
+}
+
+main .comments .comments_box .commentator p {
+    width: 340px;
+    padding-top: 15%;
+    word-spacing: 3px;
+}
+
+main .comments .comments_box .name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; */
+}
+
+main .comments .comments_box .name .image {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+main .comments .comments_box .name .image img {
+    margin-top: -230px;
+    margin-left: -200px;
+}
+
+main .comments .comments_box .name span {
+    width: 140px;
+}
+
+/* main .comments .sider-scroller {
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+} */
+main .comments .sider-scroller {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    margin-top: -20px;
+}
+
+/* main .comments .sider-scroller a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+} */
+
+main #articles {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+main #articles .articles_boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+}
+
+main #articles .articles_boxes .articles {
+    display: flex;
+    width: 82%;/*82 */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+}
+
+main #articles .articles_boxes h2 {
+    font-size: 40px;
+}
+
+main #articles .articles_boxes .articles div {
+    display: flex;
+    width: 400px;
+    height: 600px;
+    box-shadow: 5px 5px 5px gray, -5px -5px 5px white;
+    /* box-shadow: 12px 12px 12px rgb(0, 0, 0, 0.1),
+    -10px -10px 10px white; */
+    text-align: left;
+    border-radius: 20px;
+    line-height: 1.4;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main #articles .articles_boxes .articles img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+
+
+main #articles .articles_boxes .articles div h3 {
+    font-size: 25px;
+}
+
+main #articles .articles_boxes .articles div p {
+    opacity: 50%;
+    font-size: 18px;
+    
+}
+
+main #articles .articles_boxes .articles div button {
+    border: none;
+    color: rgb(87, 119, 222);
+    background-color: white;
+    font-size: 18px;
+    word-spacing: 3px;
+    padding-right: 58%;
+}
+
+main #articles .articles_boxes .articles div h3 {
+    padding-left: 5%;
+    width: 80%;
+}
+
+main #articles .articles_boxes .articles div p {
+    padding-left: 5%;
+    width: 80%;
+}
+
+main #articles .articles_boxes .view button {
+    border-radius: 30px;
+    border: 1px solid rgb(87, 119, 222);
+    color: rgb(87, 119, 222);
+    width: 180px;
+    height: 45px;
+    background-color: white;
+}
+
+footer {
+    width: 100%;
+}
+
+footer .footer-box {
+    width: 100%;
+    background: linear-gradient(to right, rgb(87, 119, 222), rgb(124, 124, 255));
+    color: white;
+    margin-top: 100px;
+    height: 400px;
+}
+
+footer .footer-box .fbox{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer-box .fbox div {
+    margin-top: 80px;
+}
+
+footer .footer-box .fbox div span {
+    background-color: white;
+    font-size: 25px;
+    color: rgb(87, 119, 222);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+footer .footer-box .fbox .fleft_side div h3, p {
+    width: 420px;
+}
+
+footer .footer-box .fbox .fleft_side {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    gap: 40px;
+    word-spacing: 2px;
+    word-spacing: 4px;
+}
+
+footer .footer-box .fbox .fright-side tr {
+    justify-content: left;
+    text-align: left;
+}
+
+footer .footer-box .fbox .fright-side .table_d td {
+    flex-direction: column;
+    line-height: 1.7;
+    width: 110px;
+}
+/* .other_half {
+    text-align: center;
+    background: linear-gradient(to right, red, blue);
+    width: 40%;
+    height: 200px;
+    margin-left: 30%;
+    font-size: 50px;
+    line-height: 2.5;
+    background-clip: text;
+    color: transparent; */
