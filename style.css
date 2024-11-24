@@ -212,6 +212,11 @@ main .services-items .services_box button:hover {
     cursor: pointer;
 }
 
+main .services-items .services_box img {
+    width: 30%;
+    height: 30%;
+}
+
 main .leading_health {
     width: 100%; 
 }
@@ -324,6 +329,7 @@ main .comments {
     align-items: center;
     text-align: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 
@@ -331,7 +337,7 @@ main .comments .comments_box {
     border-radius: 20px;
     background: linear-gradient(to top, rgb(87, 119, 222), rgb(124, 124, 255));
     width: 70%;
-    min-width: 800px;
+    min-width: 600px;
     height: 550px;
     display: flex;
     gap: 90px;
@@ -389,8 +395,56 @@ main .comments .comments_box .name span {
     aspect-ratio: 16/9;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-} */
+}  */
+
 main .comments .sider-scroller {
+    color: rgb(87, 119, 222);
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+main .comments .sider-scroller div {
+    font-size: 25px;
+    opacity: 50%;
+    cursor: pointer;
+}
+
+main .comments .sider-scroller div:hover {
+    font-size: 26px;
+    opacity: 100%;
+}
+
+/* main .comments .sider-scroller span:nth-of-type(1) {
+    color: rgb(87, 119, 222);
+    background-color: white;
+} */
+
+/* main .comments .sider-scroller span:nth-of-type(6) {
+    color: rgb(87, 119, 222);
+    background-color: white;
+} */
+
+main .comments .sider-scroller span {
+    background-color: rgb(87, 119, 222);
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    margin-top: 8px;
+    opacity: 50%;
+    cursor: pointer;
+}
+
+main .comments .sider-scroller span:hover {
+    background-color: rgb(87, 119, 222);
+    height: 14px;
+    width: 14px;
+    opacity: 100%;
+}
+
+/* main .comments .sider-scroller {
     display: flex;
     column-gap: 1rem;
     position: absolute;
@@ -399,7 +453,7 @@ main .comments .sider-scroller {
     transform: translateX(-50%);
     z-index: 1;
     margin-top: -20px;
-}
+} */
 
 /* main .comments .sider-scroller a {
     width: 0.5rem;
