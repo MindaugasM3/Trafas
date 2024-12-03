@@ -1,5 +1,5 @@
 :root {
-    --fancy: "Moo Lah Lah", serif;
+    --fancy: "Open Sans", sans-serif;
     --main-font: "Lexend Exa", sans-serif;
     --xl: 1980px;
     --lg: 1280px;
@@ -12,6 +12,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, a {
     margin: 0;
     padding: 0;
     list-style: none;
+    font-family: var(--fancy);
 }
 
 * {
